@@ -5,20 +5,28 @@
 			<th>Author</th>
 			<th>Most Recent Post</th>
 		</tr>
-		<tr>
-			<td>
-				<a href="#">Thread<?php print_r($threads); ?></a>
-			</td>
-			<td>Author Name</td>
-			<td>Date
-					<form action="#" method="post">
-						<input type="hidden" name="id" value= "">
-							<button type="submit">
-								Delete This
-							</button>
-						</input>
-					</form>
-			</td>
-		</tr>
+
+		<?php 
+			foreach ($threads as $thread) { ?>
+				<tr>
+					<td>
+						<?php echo $thread->title; ?>
+					</td>
+					<td>
+					<?php echo $thread->author_name; ?>
+					</td>
+					<td>Date
+							<form action="#" method="post">
+								<input type="hidden" name="id" value= "">
+									<button type="submit">
+										Delete This
+									</button>
+								</input>
+							</form>
+					</td>
+				</tr>
+				<?php
+			}
+		?>
 	</table>
 </section>
