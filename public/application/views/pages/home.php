@@ -15,7 +15,8 @@
 					<td>
 					<?php echo $thread->author_name; ?>
 					</td>
-					<td>Date
+					<td> 
+						<?php echo $thread->date; ?>
 							<form action="#" method="post">
 								<input type="hidden" name="id" value= "">
 									<button type="submit">
