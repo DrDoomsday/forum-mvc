@@ -159,7 +159,7 @@
 
 			<ul class="menu clearfix">
 				<li>
-					<a href="index.php">Home</a>
+					<a href="http://rdripley.com/forum-mvc">Home</a>
 				</li>
 
 				<li>

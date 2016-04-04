@@ -1,9 +1,6 @@
 <?php
 
 class Thread extends CI_Model {
-	function __construct() {
-		parent::__construct();
-	}
 	public function get_all() {
 		return $this->db->select('users.username as author_name, threads.id, threads.title, posts.date')
 			->from('threads')

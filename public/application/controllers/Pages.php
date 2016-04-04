@@ -1,12 +1,12 @@
-<?php
+.<?php
 class Pages extends CI_Controller {
 
 		public function home() {
 			$this->load->model('thread');
 			$data['threads'] = $this->thread->get_all();
-			$this->load->view('templates/header');
+			$this->load->view('common/header');
 			$this->load->view('pages/home', $data);
-			$this->load->view('templates/footer');
+			$this->load->view('common/footer');
 		}
 		public function account() {
 			$this->load->view('templates/header');
@@ -25,13 +25,6 @@ class Pages extends CI_Controller {
 		public function init_form() {
 			$this->load->view('helpers/database_helper');
 			$this->load->view('pages/init_form');
-		}
-		public function login() {
-			$this->load->view('pages/init_form');
-			$this->load->view('pages/login');
-		}
-		public function logout() {
-			$this->load->view('pages/logout');
 		}
 		public function make_thread() {
 			$this->load->view('templates/header');
