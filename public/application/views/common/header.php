@@ -172,7 +172,7 @@
 
 						if ($loggedIn) {
 							echo "Welcome, " . $_SESSION['user']; ?>
-							<a href="logout.php">
+							<a href="/forum-mvc/user/logout">
 								Log out
 							</a>
 							<?php
@@ -180,7 +180,7 @@
 							<div id="flip" class="clickable">Log-in</div>
 
 							<div id="panel">
-								<form action="login.php" method="post">
+								<form action="/forum-mvc/user/login" method="post">
 									<label>
 										Username
 										<input type="text" name="username">
