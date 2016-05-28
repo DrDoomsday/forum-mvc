@@ -10,7 +10,7 @@ class User extends CI_Controller {
 		);
 
 		if (count($results) > 0) {
-			$_SESSION['user'] = $username;
+			$_SESSION['user'] = $results[0]->username;
 			$this->load->helper('url');
 			redirect('http://rdripley.com/forum-mvc');
 		} else {
