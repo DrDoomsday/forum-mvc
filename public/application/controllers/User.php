@@ -25,4 +25,15 @@ class User extends CI_Controller {
 		$this->load->helper('url');
 		redirect('http://rdripley.com/forum-mvc');
 	}
+
+	public function register() {
+		if( $_SERVER['REQUEST_METHOD'] = $_POST) {
+			$this->load->model('user_model');
+			$this->user_model->create($username, $password);
+		} else {
+			$this->load->view('common/header');
+			$this->load->view('pages/register');
+			$this->load->view('common/footer');
+		}
+	}
 }
