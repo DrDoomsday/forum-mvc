@@ -3,10 +3,12 @@
 class User extends CI_Controller {
 	public function login() {
 		$this->load->model('user_model');
+
 		$results = $this->user_model->login(
 			$_POST['username'],
 			$_POST['password']
 		);
+
 		if (count($results) > 0) {
 			$_SESSION['user'] = $results[0]->username;
 			$this->load->helper('url');

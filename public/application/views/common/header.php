@@ -43,7 +43,7 @@
 
 			html {
 				width: auto;
--			}
+			}
 
 			body {
 				margin: 0;
@@ -88,7 +88,7 @@
 			#insideactivity, #fullactivity {
 				display: block;
 				float: right;
--				background-color: lightgrey;
+				background-color: lightgrey;
 				color: white;
 				position: fixed;
 				bottom: 500px;
