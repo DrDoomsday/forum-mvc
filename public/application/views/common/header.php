@@ -199,7 +199,7 @@
 
 									<br>
 
-									<a href="register.php">
+									<a href="http://rdripley.com/forum-mvc/user/register">
 										Sign up now!
 									</a>
 								</form>
